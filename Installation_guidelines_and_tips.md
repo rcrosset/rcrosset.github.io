@@ -5,12 +5,6 @@ layout: default
 [back](./)
 
 ## Installation guidelines and tips
-
-**Objectifs** 
-- Installer et configurer le plus rapidement possible un nouveau PC ;  
-- Retrouver facilement mes paramétrages (environnements, outils logiciels, favoris, ...) ;  
-- Historiser mes astuces, débogages, instructions spécifiques, ... ;  
-- Partager.
     
 ### Installation logiciels
 #### Linux Ubuntu 22.04 LTS « Jammy Jellyfish »
