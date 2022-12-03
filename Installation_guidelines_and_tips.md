@@ -4,15 +4,15 @@ layout: default
 
 [back](./)
 
-## Installation guidelines and tips
+# Installation guidelines and tips
     
-### Installation logiciels
-#### Linux Ubuntu 22.04 LTS « Jammy Jellyfish »
+## Installation logiciels
+### Linux Ubuntu 22.04 LTS « Jammy Jellyfish »
 Disponible depuis avril 2022, elle sera maintenue jusqu'en avril 2027.  
 [Création d’une clé USB d’installation](https://www.windows8facile.fr/creer-cle-usb-ubuntu-22-lts-desktop/)  
 Langue choisie : English  
 
-#### Anaconda
+### Anaconda
 - Make sure your System is up to date : 
 ```shell
 sudo apt-get update -y && sudo apt-get upgrade -y
@@ -44,14 +44,23 @@ conda update anaconda-navigator
 
 accès à anaconda navigator terminal
 
-<p>Click on the button to copy the text from the text field. Try to paste the text (e.g. ctrl+v) afterwards in a different window, to see the effect.</p>
+---
+
+<pre><code class="language-bash">
+source ~/.bashrc
+</code></pre>
+
+<pre><code class="language-shell">
+source ~/.bashrc
+</code></pre>
 
 <input type="text" value="Hello World" id="myInput">
 
+
 <div class="tooltip">
-<button onclick="myFunction()" onmouseout="outFunc()">
-  <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-  Copy text
+  <button onclick="myFunction()" onmouseout="outFunc()">
+    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
+    Copy text
   </button>
 </div>
 
@@ -71,6 +80,7 @@ function outFunc() {
   tooltip.innerHTML = "Copy to clipboard";
 }
 </script>
+
 
 [back](./).
 
