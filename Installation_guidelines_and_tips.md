@@ -8,7 +8,7 @@ layout: default
     
 ## Installation logiciels
 ### Linux Ubuntu 22.04 LTS « Jammy Jellyfish »
-Disponible depuis avril 2022, elle sera maintenue jusqu'en avril 2027.  
+>> Disponible depuis avril 2022, elle sera maintenue jusqu'en avril 2027.  
 [Création d’une clé USB d’installation](https://www.windows8facile.fr/creer-cle-usb-ubuntu-22-lts-desktop/)  
 Langue choisie : English  
 
@@ -22,14 +22,13 @@ sudo apt-get update -y && sudo apt-get upgrade -y
 ```shell
 md5sum /home/renaud/Downloads/Anaconda3-2022.10-Linux-x86_64.sh
 ```
-
 - Install : 
 ```shell
 sudo bash /home/renaud/Downloads/Anaconda3-2022.10-Linux-x86_64.sh
 ```
-
 - Accept the Agreement and confirm the location.
-    
+- "Do you wish the installer to initialize Anaconda3 by running conda init?" --> `yes`
+
 - To activate our installation :
 ```shell
 source ~/.bashrc
@@ -44,42 +43,6 @@ conda update anaconda-navigator
 
 accès à anaconda navigator terminal
 
----
-
-<pre><code class="language-bash">
-source ~/.bashrc
-</code></pre>
-
-<pre><code class="language-shell">
-source ~/.bashrc
-</code></pre>
-
-<input type="text" value="Hello World" id="myInput">
-
-
-<div class="tooltip">
-  <button onclick="myFunction()" onmouseout="outFunc()">
-    <span class="tooltiptext" id="myTooltip">Copy to clipboard</span>
-    Copy text
-  </button>
-</div>
-
-<script>
-function myFunction() {
-  var copyText = document.getElementById("myInput");
-  copyText.select();
-  copyText.setSelectionRange(0, 99999);
-  navigator.clipboard.writeText(copyText.value);
-  
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copied: " + copyText.value;
-}
-
-function outFunc() {
-  var tooltip = document.getElementById("myTooltip");
-  tooltip.innerHTML = "Copy to clipboard";
-}
-</script>
 
 
 [back](./).
