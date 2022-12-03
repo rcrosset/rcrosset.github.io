@@ -4,7 +4,7 @@ layout: default
 
 [back](./)
 
-## CheatsheeTips
+# CheatsheeTips
 
 lien vers le site de Guillaume RIVOLLIER : [:link:](https://rivollierg.github.io/Cheatsheet/Cheatsheet.html)
 
