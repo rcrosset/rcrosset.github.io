@@ -33,6 +33,9 @@ echo -e '#!/bin/bash\neval "$(conda shell.bash hook)" # bash alternative to cond
 free -h && sudo sysctl vm.drop_caches=3 && free -h
 ```
 
+### [Google Chrome](https://doc.ubuntu-fr.org/google_chrome)
+for professionnal use
+
 ### Visual Studio Code
 - the repository and key can be installed manually with the following script:
 ```shell
@@ -54,13 +57,19 @@ sudo apt-get install gvfs-bin
 ```
 
 ### Git
+#### Installation
 - installation:
 ```shell
 apt-get install git
 ```
+- Git LFS (Large File Storage):
+```shell
+git lfs install
+```
+#### Utilisation
 
 ### Anaconda
-### Installation
+#### Installation
 - Make sure your System is up to date : 
 ```shell
 sudo apt-get update -y && sudo apt-get upgrade -y
@@ -132,7 +141,7 @@ rm -rf ~/anaconda3
 nano ~/.bashrc → effacer ou commenter la ligne export PATH=“/home/username/anaconda3/bin:$PATH”
 ```
 
-### Funtools
+### Other little tools
 ####jp2a
 - used to convert picture/logo to ASCII in order to display in shell:
 ```shell
