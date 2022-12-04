@@ -23,13 +23,12 @@ touch file.txt file.csv file.py
     - trames non-vides :
 ```shell
 echo \#\!/bin/bash > script.bash
-echo -e '#!/bin/bash\neval "$(conda shell.bash hook)"\nconda activate base\ncd labs/\njupyter notebook' > script.bash
-
-eval "$(conda shell.bash hook)"
-conda activate conda_env
-cd labs/
-jupyter notebook
-
+echo -e '#!/bin/bash\neval "$(conda shell.bash hook)" # bash alternative to conda init\nconda activate my_conda_env\ncd my_dir/\njupyter notebook' > jn_shortcut.bash
+```
+- you can a bash script (use the jn_shortcut.bash template modifying my_conda_env and my_dir) in order to save you some time activating your conda environment and opening jupyter notebooks. 
+```shell
+chmod 755 jn_shortcut.bash
+./jn_shortcut.bash
 ```
 
 - [Nettoyer Ubuntu](https://doc.ubuntu-fr.org/nettoyer_ubuntu): 
