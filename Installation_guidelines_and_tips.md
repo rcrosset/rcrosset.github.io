@@ -25,11 +25,7 @@ touch file.txt file.csv file.py
 echo \#\!/bin/bash > script.bash
 echo -e '#!/bin/bash\neval "$(conda shell.bash hook)" # bash alternative to conda init\nconda activate my_conda_env\ncd my_dir/\njupyter notebook' > jn_shortcut.bash
 ```
-- you can a bash script (use the jn_shortcut.bash template modifying my_conda_env and my_dir) in order to save you some time activating your conda environment and opening jupyter notebooks. 
-```shell
-chmod 755 jn_shortcut.bash
-./jn_shortcut.bash
-```
+
 
 - [Nettoyer Ubuntu](https://doc.ubuntu-fr.org/nettoyer_ubuntu): 
 ```shell
@@ -105,9 +101,17 @@ conda config --set auto_activate_base false
 
 #### Utilisation
 
-[conda-cheatsheet.pdf](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
+- you can use a bash script (the jn_shortcut.bash template modifying my_conda_env and my_dir) in order to save you some time activating your conda environment and opening jupyter notebooks. 
+```shell
+chmod 755 jn_shortcut.bash
+./jn_shortcut.bash
+```
 
-accès à anaconda navigator terminal
+- [conda-cheatsheet.pdf](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
+
+- accès à anaconda navigator terminal
+
+- [Jupyter shortcuts](https://opensharing.fr/scripting-python-jupyter-shortcuts)
 
 #### Désinstallation
 
