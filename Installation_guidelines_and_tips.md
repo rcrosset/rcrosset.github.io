@@ -5,12 +5,33 @@ layout: default
 [back](./)
 
 # Installation guidelines and tips
-    
+
+*Document initié le 02/08/2022*
+
 ## Installation logiciels
-### Linux Ubuntu 22.04 LTS « Jammy Jellyfish »
->> Disponible depuis avril 2022, elle sera maintenue jusqu'en avril 2027.  
-[Création d’une clé USB d’installation](https://www.windows8facile.fr/creer-cle-usb-ubuntu-22-lts-desktop/)  
-Langue choisie : English  
+### Linux Ubuntu 
+#### Installation
+- 22.04 LTS « Jammy Jellyfish » disponible depuis avril 2022, elle sera maintenue jusqu'en avril 2027.  
+- [Création d’une clé USB d’installation](https://www.windows8facile.fr/creer-cle-usb-ubuntu-22-lts-desktop/)  
+- Langue choisie : English  
+#### Utilisation
+- Templates : placer dans `Home/Templates/` les trames de documents les plus utilisées:
+    - trames vides :
+```shell
+touch file.txt file.csv file.py
+```
+    - trames non-vides :
+```shell
+echo \#\!/bin/bash > script.bash
+echo -e "J'aime malekal.com\nmais aussi d'autres sites internet." > fichier4.txt
+
+```
+
+- [Nettoyer Ubuntu](https://doc.ubuntu-fr.org/nettoyer_ubuntu): 
+```shell
+# pour vider la mémoire vive:
+free -h && sudo sysctl vm.drop_caches=3 && free -h
+```
 
 ### Visual Studio Code
 - the repository and key can be installed manually with the following script:
@@ -33,11 +54,13 @@ sudo apt-get install gvfs-bin
 ```
 
 ### Git
+- installation:
 ```shell
-# apt-get install git
+apt-get install git
 ```
 
 ### Anaconda
+### Installation
 - Make sure your System is up to date : 
 ```shell
 sudo apt-get update -y && sudo apt-get upgrade -y
@@ -53,8 +76,9 @@ sudo bash /home/renaud/Downloads/Anaconda3-2022.10-Linux-x86_64.sh
 ```
 - Accept the Agreement and confirm the location.
 - "Do you wish the installer to initialize Anaconda3 by running conda init?" --> `yes`
+if you have selected `no`, you have to initialize after the installation process is done, first run `source [PATH TO CONDA]/bin/activate` and then run `conda init`.
 
-- To activate our installation :
+- To activate our installation refreshing the terminal:
 ```shell
 source ~/.bashrc
 ```
@@ -64,18 +88,37 @@ source ~/.bashrc
 conda deactivate
 conda update anaconda-navigator
 ```
+- To verify the installation :
+```shell
+conda info
+```
+
 
 - If you'd prefer that conda's base environment not be activated on startup, set the auto_activate_base parameter to false: 
 ```shell
 conda config --set auto_activate_base false
 ```
 
+#### Utilisation
 
 [conda-cheatsheet.pdf](https://docs.conda.io/projects/conda/en/4.6.0/_downloads/52a95608c49671267e40c689e0bc00ca/conda-cheatsheet.pdf)
 
 accès à anaconda navigator terminal
 
+#### Désinstallation
 
+```shell
+conda install anaconda-clean
+rm -rf ~/anaconda3
+nano ~/.bashrc → effacer ou commenter la ligne export PATH=“/home/username/anaconda3/bin:$PATH”
+```
+
+### Funtools
+####jp2a
+- used to convert picture/logo to ASCII in order to display in shell:
+```shell
+sudo apt install jp2a
+```
 
 [back](./).
 
