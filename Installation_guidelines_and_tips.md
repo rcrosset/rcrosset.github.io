@@ -17,16 +17,16 @@ layout: default
 #### Utilisation
 - Templates : placer dans `Home/Templates/` les trames de documents les plus utilisées:
     - trames vides :
-```shell
-touch Text_file.txt CSV_File.csv 
-```
+    ```shell
+    touch Text_file.txt CSV_file.csv 
+    ```
     - trames non-vides :
-```shell
-echo \#\!/bin/bash > script_shell.bash
-echo '#!/usr/bin/env python3' > script_python.py
-echo -e '#!/bin/bash\neval "$(conda shell.bash hook)" # bash alternative to conda init\nconda activate my_conda_env\ncd my_dir/\njupyter notebook' > jn_shortcut.bash
-echo -e '<!doctype html>\n<html lang="fr">\n<head>\n  <meta charset="utf-8">\n  <title>Titre de la page</title>\n  <link rel="stylesheet" href="style.css">\n  <script src="script.js"></script>\n</head>\n<body>\n  ...\n  <!-- Le reste du contenu -->\n  ...\n</body>\n</html>\n' > HTML_file.html
-```
+    ```shell
+    echo \#\!/bin/bash > script_shell.bash
+    echo '#!/usr/bin/env python3' > script_python.py
+    echo -e '#!/bin/bash\neval "$(conda shell.bash hook)" # bash alternative to conda init\nconda activate my_conda_env\ncd my_dir/\njupyter notebook' > jn_shortcut.bash
+    echo -e '<!doctype html>\n<html lang="fr">\n<head>\n  <meta charset="utf-8">\n  <title>Titre de la page</title>\n  <link rel="stylesheet" href="style.css">\n  <script src="script.js"></script>\n</head>\n<body>\n  ...\n  <!-- Le reste du contenu -->\n  ...\n</body>\n</html>\n' > HTML_file.html
+    ```
 
 - [Nettoyer Ubuntu](https://doc.ubuntu-fr.org/nettoyer_ubuntu): 
 ```shell
@@ -63,10 +63,16 @@ sudo apt-get install gvfs-bin
 ```shell
 apt-get install git
 ```
-- Git LFS (Large File Storage):
+
+- [configurer son prompt](https://delicious-insights.com/fr/articles/prompt-git-qui-dechire/)
+
+- Git LFS (Large File Storage): [Download Git LFS for Linux x86-64](https://git-lfs.github.com/)
 ```shell
 git lfs install
 ```
+Git LFS remplace les fichiers volumineux dans votre dépôt par de petits fichiers de pointeur.
+[Tutoriel](https://www.atlassian.com/fr/git/tutorials/git-lfs)
+
 #### Utilisation
 
 ### Anaconda
