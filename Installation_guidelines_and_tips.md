@@ -23,7 +23,12 @@ touch file.txt file.csv file.py
     - trames non-vides :
 ```shell
 echo \#\!/bin/bash > script.bash
-echo -e "J'aime malekal.com\nmais aussi d'autres sites internet." > fichier4.txt
+echo -e '#!/bin/bash\neval "$(conda shell.bash hook)"\nconda activate base\ncd labs/\njupyter notebook' > script.bash
+
+eval "$(conda shell.bash hook)"
+conda activate conda_env
+cd labs/
+jupyter notebook
 
 ```
 
