@@ -23,17 +23,18 @@ rm -f packages.microsoft.gpg
 ```
 - Then update the package cache and install the package using:
 ```shell
-# apt-get install git
+sudo apt install apt-transport-https
+sudo apt update
+sudo apt install code # or code-insiders
 ```
 - If you see an error when deleting files from the VS Code Explorer on the Debian operating system, it might be because the trash implementation that VS Code is using is not there. Run these commands to solve this issue:
 ```shell
 sudo apt-get install gvfs-bin
 ```
+
 ### Git
 ```shell
-sudo apt install apt-transport-https
-sudo apt update
-sudo apt install code # or code-insiders
+# apt-get install git
 ```
 
 ### Anaconda
