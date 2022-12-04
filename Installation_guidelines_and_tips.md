@@ -18,14 +18,14 @@ layout: default
 - Templates : placer dans `Home/Templates/` les trames de documents les plus utilisées:
     - trames vides :
 ```shell
-touch file.txt file.csv file.py
+touch file_txt.txt file_csv.csv
 ```
     - trames non-vides :
 ```shell
-echo \#\!/bin/bash > script.bash
+echo \#\!/bin/bash > script_shell.bash
+echo '#!/usr/bin/env python3' > script_python.py
 echo -e '#!/bin/bash\neval "$(conda shell.bash hook)" # bash alternative to conda init\nconda activate my_conda_env\ncd my_dir/\njupyter notebook' > jn_shortcut.bash
 ```
-
 
 - [Nettoyer Ubuntu](https://doc.ubuntu-fr.org/nettoyer_ubuntu): 
 ```shell
@@ -93,10 +93,21 @@ conda update anaconda-navigator
 conda info
 ```
 
-
 - If you'd prefer that conda's base environment not be activated on startup, set the auto_activate_base parameter to false: 
 ```shell
 conda config --set auto_activate_base false
+```
+
+- To add and give priority to *conda-forge channel*:
+```shell
+conda config --add channels conda-forge
+conda config --set channel_priority strict
+conda config --show channels
+```
+
+- To face DPI-scaling issue, set `enable_high_dpi_scaling = True` in the Anaconda config:
+```shell
+nano ~/.anaconda/navigator/anaconda-navigator.ini
 ```
 
 #### Utilisation
