@@ -18,13 +18,14 @@ layout: default
 - Templates : placer dans `Home/Templates/` les trames de documents les plus utilisées:
     - trames vides :
 ```shell
-touch file_txt.txt file_csv.csv
+touch Text_file.txt CSV_File.csv 
 ```
     - trames non-vides :
 ```shell
 echo \#\!/bin/bash > script_shell.bash
 echo '#!/usr/bin/env python3' > script_python.py
 echo -e '#!/bin/bash\neval "$(conda shell.bash hook)" # bash alternative to conda init\nconda activate my_conda_env\ncd my_dir/\njupyter notebook' > jn_shortcut.bash
+echo -e '<!doctype html>\n<html lang="fr">\n<head>\n  <meta charset="utf-8">\n  <title>Titre de la page</title>\n  <link rel="stylesheet" href="style.css">\n  <script src="script.js"></script>\n</head>\n<body>\n  ...\n  <!-- Le reste du contenu -->\n  ...\n</body>\n</html>\n' > HTML_file.html
 ```
 
 - [Nettoyer Ubuntu](https://doc.ubuntu-fr.org/nettoyer_ubuntu): 
@@ -142,7 +143,7 @@ nano ~/.bashrc → effacer ou commenter la ligne export PATH=“/home/username/a
 ```
 
 ### Other little tools
-####jp2a
+#### jp2a
 - used to convert picture/logo to ASCII in order to display in shell:
 ```shell
 sudo apt install jp2a
